@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+  --font-display: "Roboto Slab", Arial, sans-serif;
+
+  /* theme colors */
+  --color-page-dark: #0b0b10;
+  --color-page-light: #f5f5fc;
+  --color-item-dark: #1e1e28;
+  --color-item-light: #e0e0eb;
+
+  /* accent colors */
+  --color-accent: #f300b4;
+  --color-hover-dark: #323541;
+  --color-hover-light: rgba(35, 35, 35, 0.25);
+
+  /* text colors */
+  --color-dark: #d3d3d3;
+  --color-light: #5a5a5a;
+  --color-muted-dark: #969696;
+  --color-muted-light: #787878;
+
+  /* shadow colors */
+  --shadow-default: 0 0 0.3125rem rgba(65, 65, 65, 0.5);
+  --shadow-dark: 0 0 0.3125rem rgba(0, 0, 0, 0.5);
+  --shadow-accent: 0 0 0.3125rem var(--color-accent);
+
+  /* global item values */
+  --radius-item: 0.5rem;
+  --spacing-item: 0.625rem;
+
+  /* animations */
+  --animate-underline: underline 0.4s ease forwards;
+
+  @keyframes underline {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+}
+
+@layer components {
+  .page-colors {
+    @apply bg-page-dark text-dark light:bg-page-light light:text-light;
+  }
+  .item-card {
+    @apply rounded-item bg-item-dark p-item shadow-default light:bg-item-light light:shadow-dark;
+  }
+  .item-hover {
+    @apply hover:bg-hover-dark hover:shadow-accent light:hover:bg-hover-light;
+  }
+  .underline-animation {
+    @apply relative hover:before:absolute hover:before:bottom-0 hover:before:w-full hover:before:animate-underline hover:before:border-b-[2px] hover:before:border-b-accent;
+  }
+  .text-title {
+    @apply mt-6 mb-2 text-[1.5rem] font-[700] text-dark light:text-light;
+  }
+  .text-subtitle {
+    @apply text-[1.25rem] font-[600] text-dark light:text-light;
+  }
+  .text-normal {
+    @apply text-[1.0625rem] font-[400] text-dark light:text-light;
+  }
+  .text-descr {
+    @apply text-[0.9375rem] font-[400] text-muted-dark light:text-muted-light;
+  }
+  .text-misc {
+    @apply text-[0.8125rem] font-[500] text-muted-dark lowercase light:text-muted-light;
+  }
+}
