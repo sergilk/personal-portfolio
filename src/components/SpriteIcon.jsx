@@ -1,7 +1,7 @@
 const SpriteIcon = ({ icon, className }) => {
   return (
     <svg className={className}>
-      <use href={`/assets/icons/techs/sprite.svg#${icon}`} />
+      <use href={`./assets/icons/techs/sprite.svg#${icon}`} />
     </svg>
   );
 };

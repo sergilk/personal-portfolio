@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "Portfolio",
-    img: "../assets/projects/portfolio.webp",
+    img: "./assets/projects/portfolio.webp",
     repoLink: "#",
     demoLink: "#",
     descr:
