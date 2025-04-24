@@ -63,4 +63,8 @@
   <symbol id="vercel" viewBox="0 0 64 64">
     <path d="m32 4 32 55H0L32 4Z"/>
   </symbol>
+<!--express JS-->
+  <symbol id="express" viewBox="0 0 32 32">
+    <path d="m32 25-3-1-4-7h-1l-5 7-3 1 7-9-6-9 2 1 5 7 5-7 2-1-2 4-3 4v1l6 9zM0 15l1-2c1-6 7-8 12-5 2 2 3 5 3 8H1c0 6 4 9 10 8l3-4 2-1-4 5c-3 2-7 1-10-1l-2-5v-3zm2 0h12c0-4-2-7-6-7s-6 3-6 7z"/>
+  </symbol>
 </svg>
