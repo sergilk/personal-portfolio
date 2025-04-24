@@ -18,7 +18,7 @@ const level = {
   advanced: "advanced", // solid knowledge, understanding the mechanics
 };
 
-export const techs = [
+export const techList = [
   {
     name: "HTML",
     icon: "html",

@@ -1,4 +1,4 @@
-import { techs } from "../data/data";
+import { techList } from "../data/data";
 import SpriteIcon from "./SpriteIcon";
 
 const Skills = () => {
@@ -7,7 +7,7 @@ const Skills = () => {
       <h2 className="text-title">Skills</h2>
       <div className="grid gap-2">
         <ul className="grid grid-cols-[repeat(auto-fit,minmax(6.33rem,1fr))] gap-2">
-          {techs.map(({ name, icon, config: { show } }) =>
+          {techList.map(({ name, icon, config: { show } }) =>
             show ? (
               <li
                 key={name}
