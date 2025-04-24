@@ -7,21 +7,23 @@ const Skills = () => {
       <h2 className="text-title">Skills</h2>
       <div className="grid gap-2">
         <ul className="grid grid-cols-[repeat(auto-fit,minmax(6.33rem,1fr))] gap-2">
-          {techs.map((tech) => (
-            <li
-              key={tech.name}
-              className="item-card item-hover flex flex-col items-center gap-0.5"
-            >
-              <SpriteIcon
-                icon={tech.icon}
-                className="max-h-[1.875rem] max-w-[1.875rem] select-none"
-                alt={`${tech.name} logo`}
-                width={30}
-                height={30}
-              />
-              <p className="text-normal text-[1rem]">{tech.name}</p>
-            </li>
-          ))}
+          {techs.map(({ name, icon, config: { show } }) =>
+            show ? (
+              <li
+                key={name}
+                className="item-card item-hover flex flex-col items-center gap-0.5"
+              >
+                <SpriteIcon
+                  icon={icon}
+                  className="max-h-[1.875rem] max-w-[1.875rem] select-none"
+                  alt={`${name} logo`}
+                  width={30}
+                  height={30}
+                />
+                <p className="text-normal text-[1rem]">{name}</p>
+              </li>
+            ) : null,
+          )}
         </ul>
         <div className="flex flex-wrap items-center gap-1">
           <p className="text-normal">Current learning path:</p>

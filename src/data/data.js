@@ -11,15 +11,62 @@ export const projects = [
   },
 ];
 
+const level = {
+  rookie: "rookie", // learning basics
+  beginner: "beginner", // understanding basic concepts
+  intermediate: "intermediate", // implementing basic concepts in practice
+  advanced: "advanced", // solid knowledge, understanding the mechanics
+};
+
 export const techs = [
-  { name: "HTML", icon: "html" },
-  { name: "CSS", icon: "css" },
-  { name: "SASS", icon: "sass" },
-  { name: "JavaScript", icon: "javascript" },
-  { name: "React.js", icon: "reactjs" },
-  { name: "TailwindCSS", icon: "tailwindcss" },
-  { name: "Git", icon: "git" },
-  { name: "GitHub", icon: "github" },
-  { name: "Vite", icon: "vite" },
-  { name: "Vercel", icon: "vercel" },
+  {
+    name: "HTML",
+    icon: "html",
+    config: { level: level.advanced, show: true },
+  },
+  {
+    name: "CSS",
+    icon: "css",
+    config: { level: level.advanced, show: true },
+  },
+  {
+    name: "SASS",
+    icon: "sass",
+    config: { level: level.intermediate, show: true },
+  },
+  {
+    name: "JavaScript",
+    icon: "javascript",
+    config: { level: level.intermediate, show: true },
+  },
+  {
+    name: "React.js",
+    icon: "reactjs",
+    config: { level: level.beginner, show: true },
+  },
+  {
+    name: "TailwindCSS",
+    icon: "tailwindcss",
+    config: { level: level.intermediate, show: true },
+  },
+  {
+    name: "Git",
+    icon: "git",
+    config: { level: level.beginner, show: true },
+  },
+  {
+    name: "GitHub",
+    icon: "github",
+    config: { level: level.beginner, show: true },
+  },
+  {
+    name: "Vite",
+    icon: "vite",
+    config: { level: level.intermediate, show: true },
+  },
+  {
+    name: "Vercel",
+    icon: "vercel",
+    config: { level: level.intermediate, show: true },
+  },
 ];
