@@ -33,7 +33,7 @@ const Header = () => {
             <FaGithub className="item-card item-hover p-1" />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/serhii-liashko-2b4939357/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn profile"
