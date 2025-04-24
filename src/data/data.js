@@ -9,6 +9,16 @@ export const projects = [
       "A modern, minimalistic personal portfolio built to showcase completed projects and skills. The design is responsive, and it supports full customization, allowing you to easily adjust the style to suit your needs. The primary goal of the project is to practice building applications using modern technologies such as TailwindCSS v4 and React.js",
     techs: ["React.js", "TailwindCSS", "Vite"],
   },
+  {
+    id: 2,
+    name: "Simple auth app",
+    img: "./assets/projects/auth-app.webp",
+    repoLink: "https://github.com/sergilk/simple-auth-app",
+    demoLink: "https://simple-auth-app-9xvu.onrender.com/",
+    descr:
+      "Auth app featuring JWT handling, password hashing with bcrypt, request limiting, form validation, basic user profile editing, and alert messages logic based on server response. This project helped me dive deeper into server routing, React Router, token management, server structure, and basic API handling.",
+    techs: ["React.js", "TailwindCSS", "Vite", "JavaScript", "Express.js"],
+  },
 ];
 
 const level = {
