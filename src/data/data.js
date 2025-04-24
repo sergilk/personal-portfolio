@@ -69,4 +69,9 @@ export const techList = [
     icon: "vercel",
     config: { level: level.intermediate, show: true },
   },
+  {
+    name: "Express.js",
+    icon: "express",
+    config: { level: level.rookie, show: false },
+  },
 ];
